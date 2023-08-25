@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+@layer components {
+  .form-input {
+    @apply text-slate-700 block my-8 p-4 border-2 rounded shadow-sm shadow-blue-300 font-semibold;
+  }
+  .btn2 {
+    @apply bg-blue-500 text-white p-4 rounded font-bold hover:bg-blue-700 block;
+  }
+}
+
+.back {
+  height: 85vh;
+  width: 100%;
+  background-image: url("../public/ui-images/hooome.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #033d4b;
+}
+/* .backBank {
+  display: flex;
+  align-items: flex-start;
+  height: 90vh;
+  width: 100%;
+  background-image: url("../public/ui-images/hmm.jpg");
+  background-color: #065d73;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.container {
+  display: flex;
+  /* background-color: #f0f0f0; */
+  /* justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px; */
+  /* flex-grow: 1; */
+}
+
+.img-wrg {
+  flex: 1;
+  /* margin-right: 20px; */
+}
+
+/* img {
+  max-width: 100%;
+  height: auto;
+} */
+
+.button {
+  /* background-color: #00060b; */
+  /* color: white; */
+  border: none;
+  /* padding: 10px 20px; */
+  border-radius: 5px;
+  cursor: pointer;
+}
